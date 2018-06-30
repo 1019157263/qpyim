@@ -12,9 +12,15 @@ public class MainActivity extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);//去除标题栏
         setContentView(R.layout.main);
+		
 		BitmapDrawable draw = new BitmapDrawable("storage/emulated/0/qpython/qpyim.jpg");
-		View textView3 = (LinearLayout) findViewById(R.id.mainLinearLayout1);	
-		textView3.setBackgroundDrawable(draw);
-    }
-}
+		ImageView textView3 = (ImageView) findViewById(R.id.mainImageView1);	
+		textView3.setImageDrawable(draw);
+		
+		
+		
+	}
+	}
