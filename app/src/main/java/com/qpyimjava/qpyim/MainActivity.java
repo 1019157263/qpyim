@@ -15,17 +15,18 @@ public class MainActivity extends Activity
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);//去除标题栏
         setContentView(R.layout.main);
+		
 		new Thread() {
 			@Override
 			public void run() {
 				
 					
 				while(true){
-				final BitmapDrawable draw = new BitmapDrawable("storage/emulated/0/qpython/qpyim.jpg");
+				final BitmapDrawable draw = new BitmapDrawable("/sdcard/qpython/qpyim.jpg");
 				final ImageView textView3 = (ImageView) findViewById(R.id.mainImageView1);	
 					try
 					{
-						Thread.sleep(1500);
+						Thread.sleep(100);
 					}
 					catch (InterruptedException e)
 					{}
