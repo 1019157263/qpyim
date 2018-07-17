@@ -11,7 +11,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/mainImageView1"
-		android:src="@drawable/ic_launcher"/>
+		android:src="@drawable/ic_launcher"
+		android:background="#FFFFFF"/>
 
 </LinearLayout>
 
