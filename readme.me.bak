@@ -1,0 +1,5 @@
+使用cv2时:
+    导入文件中的show库
+    import show
+    show.show(img)
+    即可显示
